@@ -1,0 +1,28 @@
+.about__container {
+  display: grid;
+  grid-template-areas:
+    "heading heading"
+    "photo text";
+  grid-template-columns: 300px 1fr;
+  grid-template-rows: 100px 1fr;
+}
+
+.about h2 {
+  @include list-reset;
+  grid-area: heading;
+  text-align: right;
+  @include outline;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.about__text {
+  margin-left: 20px;
+}
+
+.about__text p {
+  @include main-text;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+}

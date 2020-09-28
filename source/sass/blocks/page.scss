@@ -1,0 +1,36 @@
+.page__header {
+  @include outline(green);
+  min-height: 200px;
+  padding-top: 80px;
+  background: url("../../img/bg-header.svg") 0 20px no-repeat;
+  background-size:100% 200px;
+}
+
+.page__header b,
+.page__header span {
+  display: block;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+}
+.page__header b {
+  color: $black;
+  font-size: 48px;
+  line-height: 63px;
+}
+
+.page__header span {
+  display: block;
+  font-size: 36px;
+  line-height: 47px;
+  font-weight: 700;
+  color: $mainBlue;
+}
+
+.page__header-container {
+  @include outline(red);
+  width: 1300px;
+  margin: 0 auto;
+}
