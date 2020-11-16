@@ -1,9 +1,8 @@
 .page__header {
-  @include outline(green);
-  min-height: 200px;
-  padding-top: 80px;
-  background: url("../../img/bg-header.svg") 0 20px no-repeat;
-  background-size:100% 200px;
+  box-sizing: border-box;
+  // @include outline(green);
+  min-height: 386px;
+  padding-top: 50px;
 }
 
 .page__header b,
@@ -12,25 +11,34 @@
   padding: 0;
   margin: 0;
   text-align: center;
-  font-family: 'Roboto Slab', serif;
+  font-family: "Cormorant SC", serif;
   font-weight: 700;
 }
+
 .page__header b {
   color: $black;
-  font-size: 48px;
-  line-height: 63px;
+  font-size: 64px;
+  line-height: 69px;
+  margin-top: 40px;
 }
 
 .page__header span {
   display: block;
-  font-size: 36px;
+  font-size: 42px;
   line-height: 47px;
   font-weight: 700;
   color: $mainBlue;
+  margin-top: 20px;
 }
 
 .page__header-container {
-  @include outline(red);
+  // @include outline(red);
   width: 1300px;
+  margin: 0 auto;
+}
+
+.page__header-container img {
+  // @include outline(green);
+  display: block;
   margin: 0 auto;
 }

@@ -1,31 +1,23 @@
 .about {
-  background: url("../img/bg-about.svg") 0 120px no-repeat;
-  background-size: 100% 136px;
+  background-color: #f5f5f5;
+  margin-top: 30px;
 }
 
 .about__container {
-  display: grid;
-  grid-template-areas:
-    "heading heading"
-    "photo text";
-  grid-template-columns: 300px 1fr;
-  grid-template-rows: 100px 1fr;
+  width: 1300px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .about h2 {
+  // @include outline;
   @include list-reset;
-  grid-area: heading;
-  text-align: right;
-  @include outline;
-  margin-top: 20px;
+  text-align: left;
   margin-bottom: 20px;
 }
 
-.about__text {
-  margin-left: 20px;
-}
-
 .about__text p {
+  // @include outline;
   @include main-text;
   padding: 0;
   margin: 0;
