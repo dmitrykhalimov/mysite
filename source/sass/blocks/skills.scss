@@ -1,0 +1,73 @@
+.skills__container {
+  display: grid;
+  grid-template-areas:
+    "heading heading"
+    "description icons"
+    "text icons";
+  grid-template-rows: 50px 100px 1fr;
+  grid-template-columns: 770px 1fr;
+}
+
+.skills h2 {
+  @include list-reset;
+  grid-area: heading;
+}
+
+.skills__description {
+  @include list-reset;
+  @include main-text;
+  grid-area: description;
+}
+
+.skills__icons {
+  grid-area: icons;
+  display: grid;
+  grid-template-areas:
+    "languages languages"
+    "proc tools"
+    "auto frameworks";
+  grid-template-rows: 210px 210px 210px;
+  grid-template-columns: 0.5fr 0.5fr;
+}
+
+.skills__languages {
+  list-style: none;
+  grid-area: languages;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.skills__proc,
+.skills__tools,
+.skills__auto {
+  list-style: none;
+}
+
+.skills__languages-item,
+.skills__proc-item,
+.skills__tools-item,
+.skills__auto-item {
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  width: 50%;
+  height: 50px;
+}
+
+.skills__languages-item {
+  font-size: 48px;
+  line-height: 62px;
+}
+
+.skills__proc-item,
+.skills__tools-item,
+.skills__auto-item {
+  font-size: 36px;
+  line-height: 47px;
+}
+
+.skills__details {
+  grid-area: text;
+}
+
