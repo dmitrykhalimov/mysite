@@ -1,0 +1,29 @@
+.main-nav {
+  @include outline(green);
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.main-nav__list {
+  @include outline(purple);
+  list-style: none;
+  display: flex;
+  padding: 0;
+  width: 60%;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.main-nav__item {
+  font-size: 30px;
+}
+
+.main-nav span {
+  @include outline(red);
+  font-size: 22px;
+  display: inline-block;
+}
+

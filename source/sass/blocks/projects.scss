@@ -1,26 +1,33 @@
 .projects__list {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
+  display: grid;
+  grid-template-columns: 280px 280px 280px 280px;
+  grid-template-rows: 400px;
+
   padding: 0;
   margin: 0;
   justify-content: space-between;
   // @include outline;
+
 }
 
 .projects__item {
-  width: 381px;
+  width: 280px;
   // @include outline (green);
   margin-bottom: 30px;
   padding-bottom: 10px;
   box-sizing: border-box;
   border: 2px solid rgba(0, 0, 0, 0.42);
-  background-color: rgb(255, 255, 254);
+  overflow-y: hidden;
 }
 
 .projects__item img {
   display: block;
   margin: 0 auto;
+}
+
+.projects__item--expand {
+  z-index: 100;
+  background-color: wheat;
 }
 
 .projects__item h3 {
@@ -83,6 +90,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+
 }
 
 .projects__work {
