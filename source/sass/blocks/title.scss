@@ -1,0 +1,31 @@
+.title {
+  display: grid;
+  grid-template-areas: "title photo"
+  "myname photo";
+  grid-template-rows: 30% 70%;
+  grid-template-columns: 50% 50%;
+  background-color: wheat;
+}
+
+.title span {
+  position: relative;
+  align-self: end;
+  grid-area: title;
+  font-size: 60px;
+  z-index: 1;
+  text-transform: uppercase;
+  white-space: pre;
+}
+
+.title b {
+  grid-area: myname;
+  font-size: 100px;
+  white-space: pre;
+  z-index: 1;
+  align-self: center;
+}
+
+.title img {
+  grid-area: photo;
+  right: 0;
+}
