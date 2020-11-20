@@ -5,4 +5,19 @@
   font-size: 44px;
   line-height: 58px;
   color: #000000;
+  position: relative;
 }
+
+.heading::after {
+  content: "";
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 130px;
+  height: 5px;
+  background-color: $yellow;
+}
+
+.heading--white {
+  color: $white;
+};

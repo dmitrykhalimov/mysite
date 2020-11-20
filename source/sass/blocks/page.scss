@@ -1,8 +1,18 @@
 .page__header {
   box-sizing: border-box;
+  background-color: $deepblue;
   // @include outline(green);
   // min-height: 386px;
-  // padding-top: 50px;
+  padding-top: 50px;
+  color: $deepblue;
+}
+
+.page__footer {
+  background-color: $deepblue;
+}
+
+.page__footer a {
+  color: $white;
 }
 
 
