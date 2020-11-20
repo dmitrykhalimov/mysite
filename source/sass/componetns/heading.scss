@@ -1,23 +1,41 @@
 .heading {
-  font-family: 'PT Sans', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
-  font-weight: bold;
-  font-size: 44px;
-  line-height: 58px;
+  font-weight: 900;
+  font-size: 65px;
+  line-height: 73px;
   color: #000000;
   position: relative;
+  margin-bottom: 0;
 }
 
 .heading::after {
   content: "";
   position: absolute;
-  top: 60px;
+  top: 79px;
   left: 0;
-  width: 130px;
+  width: 194px;
   height: 5px;
   background-color: $yellow;
 }
 
 .heading--white {
   color: $white;
-};
+}
+
+
+@media (max-width: 1200px) {
+  .heading {
+    font-size: 50px;
+    line-height: 52px;
+  }
+
+  .heading::after {
+    top: 55px;
+    left: 0;
+    width: 154px;
+    height: 4px;
+    background-color: $yellow;
+  }
+
+}
